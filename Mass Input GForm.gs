@@ -31,5 +31,5 @@ function auto_entry() {
     };
         UrlFetchApp.fetch(formURL, options);
   }
-  Browser.msgBox("Sukses Input AJG, Ayo kerja lagi asu");
+  Browser.msgBox("Sukses Input, Ayo kerja lagi !!!");
 }
