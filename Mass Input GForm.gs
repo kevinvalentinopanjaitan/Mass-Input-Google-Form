@@ -1,10 +1,10 @@
 //README
 //PASTIKAN HANYA 1 GSHEET YANG TERBUKA, JANGAN LEBIH
 //MAKSIMAL 10 BARIS
-function auto_entry() {
+function mass_auto_input() {
 
   var wrkBk = SpreadsheetApp.getActiveSpreadsheet(); 
-  var wrkSht = wrkBk.getSheetByName('Sheet12'); //Nama GSheet kamu dibawah
+  var wrkSht = wrkBk.getSheetByName('SHEET-NAME'); //Nama GSheet kamu dibawah
 
   var formURL = ""
   var formData = ""
@@ -20,7 +20,7 @@ function auto_entry() {
     origin = wrkSht.getRange("B:2" + i).getDisplayValue(); //KOLOM B
     
 
-    var formURL = "https://docs.google.com/forms/d/e/1FAIpQLSf59BrMPL7jcmmkrVdmCCrlter2QC8LX3VzZ8JosPXSvrS4SA/formResponse";
+    var formURL = "https://docs.google.com/forms/d/e/1FAIpQLSf59BrMPL7jcmmkrVdmCCrlter2QC8LX3VzZ8JosPXSvrS4SA/formResponse"; //URL G-FORM
     var formData = {"entry.201315809": caseid, "entry.1972737182": origin};
 
     //var finalURL = formURL + formData
